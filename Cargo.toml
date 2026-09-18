@@ -3,6 +3,22 @@ name = "akashic"
 version = "0.1.0"
 edition = "2021"
 description = "Reader-agnostic Markdown knowledge graph engine"
+license = "MIT"
+repository = "https://github.com/PedrocaODev/akashic-records"
+homepage = "https://github.com/PedrocaODev/akashic-records"
+documentation = "https://docs.rs/akashic"
+readme = "README.md"
+keywords = ["markdown", "knowledge-graph", "pkm", "graph", "notes"]
+categories = ["command-line-utilities", "data-structures"]
+exclude = [
+    ".agents/",
+    ".scratch/",
+    ".githooks/",
+    ".github/",
+    "res/",
+    "docs/",
+    "skills/",
+]
 
 [dependencies]
 clap = { version = "4.5", features = ["derive"] }
