@@ -72,6 +72,35 @@ Each relation entry contains:
 - **`evidence`**: Optional relative path to an evidence node (`./evidence-node.md`).
 - **`scope`**: Optional scope override defining where the specific relation applies.
 
+## Installation
+
+### Install the CLI via Cargo
+
+Install the `akashic` binary directly from crates.io:
+
+```bash
+cargo install akashic
+```
+
+### Add as a Library Dependency
+
+Add `akashic` to your `Cargo.toml`:
+
+```toml
+[dependencies]
+akashic = "0.1"
+```
+
+### Build from Source
+
+Clone the repository and install the binary locally:
+
+```bash
+git clone https://github.com/PedrocaODev/akashic-records.git
+cd akashic-records
+cargo install --path .
+```
+
 ## CLI Usage & Subcommands
 
 Run `akashic` with one of the following subcommands.
