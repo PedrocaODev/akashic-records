@@ -1,6 +1,4 @@
-# Akashic Records
-
-Akashic Records is a knowledge graph engine for Markdown vaults. It preserves historical decisions. It delivers verified current guidance and typed graph edges to AI agents.
+![Akashic Records](res/Akashic-Records.png)
 
 ## Key Principles
 
