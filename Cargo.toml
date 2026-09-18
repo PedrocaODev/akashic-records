@@ -1,0 +1,21 @@
+[package]
+name = "akashic"
+version = "0.1.0"
+edition = "2021"
+description = "Reader-agnostic Markdown knowledge graph engine"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+pulldown-cmark = "0.12"
+thiserror = "2.0"
+petgraph = "0.7"
+walkdir = "2.5"
+difflib = "0.4"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.1"
+tempfile = "3.10"

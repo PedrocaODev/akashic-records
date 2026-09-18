@@ -1,0 +1,3 @@
+# Canonical Forward-Only Relationship Storage
+
+Persisting bidirectional edges (such as writing both `supersedes` on a successor and `superseded_by` on a predecessor) directly into source Markdown frontmatter causes frequent desynchronization, double editing, and Git merge conflicts. We decided that only the asserting note records the relationship in frontmatter (`relations: [{type: ..., target: ...}]`), while the graph engine dynamically projects inverse views (`superseded_by`, `required_by`, `supports`) at index and query time. This eliminates data redundancy in source files and ensures consistent graph construction.

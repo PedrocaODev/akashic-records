@@ -1,0 +1,3 @@
+# Strict Abstention on Graph Conflicts and Cycles
+
+When supersession cycles ($A \rightarrow B \rightarrow C \rightarrow A$) or competing successors ($B$ and $C$ both supersede $A$ without superseding each other) occur, falling back to heuristics like file modification times (`mtime`) or timestamps produces silent, misleading context for AI agents. We decided that the engine must strictly abstain from choosing a winner in ambiguous topologies, emitting an explicit `UNRESOLVED_CONFLICT` warning block in query context packets and failing validation during linting. This forces explicit human resolution and prevents AI hallucination based on stale or disputed facts.
