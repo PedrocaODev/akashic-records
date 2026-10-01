@@ -108,6 +108,12 @@ pub enum Commands {
         #[arg(long)]
         json: bool,
     },
+    /// Run Model Context Protocol (MCP) server over standard I/O
+    Mcp {
+        /// Path to the vault directory
+        #[arg(long, default_value = ".")]
+        vault: PathBuf,
+    },
 }
 
 /// Formats a Node into a human-readable summary string.

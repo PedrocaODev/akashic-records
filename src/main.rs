@@ -74,6 +74,18 @@ fn main() {
                 0
             }
         }
+        Commands::Mcp { vault } => {
+            let rt = tokio::runtime::Builder::new_multi_thread()
+                .enable_all()
+                .build()
+                .expect("Failed to initialize Tokio runtime");
+            if let Err(err) = rt.block_on(akashic::mcp::run_mcp_server(vault)) {
+                eprintln!("Error: {}", err);
+                1
+            } else {
+                0
+            }
+        }
     };
 
     if exit_code != 0 {

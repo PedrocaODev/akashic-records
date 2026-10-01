@@ -1,6 +1,7 @@
 pub mod cli;
 pub mod graph;
 pub mod linter;
+pub mod mcp;
 pub mod model;
 pub mod okf;
 pub mod parser;
