@@ -715,7 +715,7 @@ impl AkashicMcpServer {
 
 #[rmcp::tool_handler(
     name = "akashic",
-    version = "0.1.0",
+    version = "0.2.0",
     instructions = "Akashic Records knowledge graph server"
 )]
 impl rmcp::ServerHandler for AkashicMcpServer {}
